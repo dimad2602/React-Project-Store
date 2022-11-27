@@ -1,7 +1,7 @@
 const ApiError = require('../error/ApiError');
 const bcrypt = require('bcrypt')// хеширование паролей
 const jwt = require('jsonwebtoken') //
-const {User, Basket} = require('../models/models') // модель пользователя и карзины
+const {User, Build} = require('../models/models') // модель пользователя и карзины
 
 const generateJwt = (id, email, role) => {
     return jwt.sign(
@@ -23,7 +23,7 @@ class UserController {
         }
         const hashPassword = await bcrypt.hash(password, 5) //хешируем пароль
         const user = await User.create({email, role, password: hashPassword})
-        const basket = await Basket.create({userId: user.id}) // карзина пользователя
+        const build = await Build.create({userId: user.id}) // карзина пользователя
         const token = generateJwt(user.id, user.email, user.role)
         return res.json({token})
     }
