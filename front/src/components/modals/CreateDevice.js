@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react';
 import Modal from "react-bootstrap/Modal";
-import {Button, Dropdown, Form} from "react-bootstrap";
+import {Button, Dropdown, Form, Row, Col} from "react-bootstrap";
 import {Context} from "../../index";
 
 
@@ -19,9 +19,9 @@ const CreateDevice = ({show, onHide}) => {
     const addInfo = () => {
         setInfo([...info, {title: '', description: '', number: Date.now()}])
     }
-    // const removeInfo = (number) => {
-    //     setInfo(info.filter(i => i.number !== number))
-    // }
+    const removeInfo = (number) => {
+         setInfo(info.filter(i => i.number !== number))
+    }
     // const changeInfo = (key, value, number) => {
     //     setInfo(info.map(i => i.number === number ? {...i, [key]: value} : i))
     // }
@@ -107,7 +107,35 @@ const CreateDevice = ({show, onHide}) => {
                         onClick={addInfo}
                     >
                         Добавить новое свойство
-                    </Button>
+            </Button>
+
+            {info.map(i =>
+                        <Row className="mt-4" key={i.number}>
+                            <Col md={4}>
+                                <Form.Control
+                                    //value={i.title}
+                                    //onChange={(e) => changeInfo('title', e.target.value, i.number)}
+                                    placeholder="Введите название свойства"
+                                />
+                            </Col>
+                            <Col md={4}>
+                                <Form.Control
+                                    //value={i.description}
+                                    //onChange={(e) => changeInfo('description', e.target.value, i.number)}
+                                    placeholder="Введите описание свойства"
+                                />
+                            </Col>
+                            <Col md={4}>
+                                <Button
+                                    onClick={() => removeInfo(i.number)}
+                                    variant={"outline-danger"}
+                                >
+                                    Удалить
+                                </Button>
+                            </Col>
+                        </Row>
+                    )}
+
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
