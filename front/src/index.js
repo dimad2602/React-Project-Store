@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import * as serviceWorker from './serviceWorker';
+import UserService from './service/UserSevice';
+import DeviceService from './service/DeviceService';
 
+export const Context = createContext(null)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode> // old render
+        <Context.Provider value={{
+            user: new UserService(),
+            device: new DeviceService(),
+        }}>
+            <App />
+        </Context.Provider>,
+      // document.getElementById('root') //warning
 );
 
 
@@ -19,6 +28,8 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 // ReactDOM.render(<App />, document.getElementById('root'));
+
+
 
 // // If you want your app to work offline and load faster, you can change
 // // unregister() to register() below. Note this comes with some pitfalls.
