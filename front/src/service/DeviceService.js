@@ -2,9 +2,32 @@ import {makeAutoObservable} from "mobx";
 
 export default class DeviceService {
     constructor() {
-        this._types = []
-        this._brands = []
-        this._devices = []
+        this._types = [
+            {id: 1, name: 'Первый тип'},
+            {id: 2, name: 'Второй тип'},
+            {id: 3, name: 'Третий тип'},
+            {id: 4, name: 'Четвертый тип'},
+        ]
+        this._brands = [
+            {id: 1, name: 'Бренд'},
+            {id: 2, name: 'Второй Бренд'},
+            {id: 3, name: 'Третий Бренд'},
+            {id: 4, name: 'Четвертый Бренд'},
+            // {id: 5, name: 'Второй Бренд'},
+            // {id: 6, name: 'Второй Бренд'},
+            // {id: 7, name: 'Второй Бренд'},
+            // {id: 8, name: 'Второй Бренд'},
+            // {id: 9, name: 'Второй Бренд'},
+            // {id: 10, name: 'Второй Бренд'},
+        ]
+        this._devices = [
+        {id: 1, name: 'devices', rating:"5"},
+        {id: 2, name: 'devices', rating:"3"},
+        {id: 3, name: 'Третий devices', rating:"4"},
+        {id: 4, name: 'Четвертый devices'},
+        {id: 5, name: 'devices', rating:"4"},
+        {id: 6, name: 'devices'}
+        ]
         this._selectedType = {}
         this._selectedBrand = {}
         this._page = 1

@@ -3,7 +3,8 @@ import Auth from "./pages/Auth"
 import Build from "./pages/Build"
 import DevicePage from "./pages/DevicePage"
 import Home from "./pages/Home"
-import { ADMIN_ROUTE, BUILT_ROUTE, DEVICE_ROUTE, HOME_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE } from "./utils/consts"
+import Shop from "./pages/Shop"
+import { ADMIN_ROUTE, BUILT_ROUTE, DEVICE_ROUTE, HOME_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE } from "./utils/consts"
 
 export const authRoutes = [
     {
@@ -21,6 +22,10 @@ export const publicRoutes = [
         path: HOME_ROUTE,
         Component: Home
         //Element: Home
+    },
+    {
+        path: SHOP_ROUTE,
+        Component: Shop
     },
     {
         path: LOGIN_ROUTE,

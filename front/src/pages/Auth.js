@@ -1,8 +1,6 @@
 import React from 'react';
-import {Container, Form} from "react-bootstrap";
-import Card from "react-bootstrap/Card";
+import {Container, Form, Card} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
 import {NavLink, useLocation} from "react-router-dom";
 import {observer} from "mobx-react-lite";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from '../utils/consts';
@@ -33,7 +31,7 @@ const Auth = observer(() => {
                         //onChange={e => setPassword(e.target.value)}
                         //type="password"
                     />
-                    <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
+                    <Form className="d-flex justify-content-between mt-3 pl-3 pr-3">
                         {isLogin ?
                             <div>
                                 Нет аккаунта? <NavLink to={REGISTRATION_ROUTE}>Зарегистрируйся!</NavLink>
@@ -49,7 +47,7 @@ const Auth = observer(() => {
                         >
                             {isLogin ? 'Войти' : 'Регистрация'}
                         </Button>
-                    </Row>
+                    </Form>
 
                 </Form>
             </Card>
