@@ -21,7 +21,7 @@ export default class DeviceService {
             // {id: 10, name: 'Второй Бренд'},
         ]
         this._devices = [
-        {id: 1, name: 'devices', rating:"5"},
+        {id: 1, name: 'devices', price:10000, rating:5, img:'https://img2.freepng.ru/20180426/ypw/kisspng-avatar-steam-killing-floor-super-house-of-dead-nin-5ae1ab68158d79.7649155815247389200883.jpg'},
         {id: 2, name: 'devices', rating:"3"},
         {id: 3, name: 'Третий devices', rating:"4"},
         {id: 4, name: 'Четвертый devices'},
