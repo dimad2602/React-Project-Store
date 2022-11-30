@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TypeBar from "../components/TypeBar";
 import BrandBar from '../components/BrandBar';
+import Pages from '../components/Pages';
 import DeviceList from '../components/DeviceList';
 import { observer } from 'mobx-react-lite';
 import {Context} from "../index";
@@ -22,6 +23,14 @@ const Shop = observer(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    useEffect(() => {
+        fetchDevices(device.selectedType.id, device.selectedBrand.id, device.page, 2).then(data => {
+            device.setDevices(data.rows)
+            device.setTotalCount(data.count)
+        })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [device.page, device.selectedType, device.selectedBrand,])
+
     return (
         <Container>
             <Row className="mt-2">
@@ -31,6 +40,7 @@ const Shop = observer(() => {
                 <Col md={9}>
                     <BrandBar/>
                     <DeviceList/>
+                    <Pages/>
                 </Col>
             </Row>
         </Container>
