@@ -4,9 +4,9 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './components/AppRouter';
 import NavBar from './components/Navbar';
-import React from "react";
-import NavBar from "./context/NavBar"
-import MainMenu from './components/MainMenu';
+// import React from "react";
+// import NavBar from "./context/NavBar"
+// import MainMenu from './components/MainMenu';
 
 // function App() {
 //   return (
