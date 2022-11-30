@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { NavLink } from 'react-router-dom';
-import { ADMIN_ROUTE, HOME_ROUTE} from '../utils/consts';
+import { ADMIN_ROUTE, HOME_ROUTE, LOGIN_ROUTE} from '../utils/consts';
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import {useNavigate} from 'react-router-dom' // useHistory
@@ -39,8 +39,8 @@ const NavBar = observer(() => {
                     </Nav>
                     :
                     <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button variant={"outline-light"} onClick={() => user.setIsAuth(true)}>Авторизация</Button>  
-                        {/* || history(LOGIN_ROUTE) */}
+                        <Button variant={"outline-light"} onClick={() => history(LOGIN_ROUTE)}>Авторизация</Button>  
+                        
                     </Nav>
                 }
         </Container>

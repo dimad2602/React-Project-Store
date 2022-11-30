@@ -8,6 +8,7 @@ import DeviceService from './service/DeviceService';
 
 export const Context = createContext(null)
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log(process.env.REACT_APP_API_URL)
 root.render(
   // <React.StrictMode>
   //   <App />
