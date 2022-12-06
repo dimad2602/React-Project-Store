@@ -3,12 +3,17 @@ import { Context } from '../index';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { NavLink } from 'react-router-dom';
-import { ADMIN_ROUTE, HOME_ROUTE, LOGIN_ROUTE} from '../utils/consts';
+import { ADMIN_ROUTE, LOGIN_ROUTE} from '../utils/consts';
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import {useNavigate} from 'react-router-dom' // useHistory
+import styled from '@emotion/styled';
 
+
+const CompanyName = styled.div`
+color: white;
+
+`
 const NavBar = observer(() => {
     const {user} = useContext(Context)
     const history = useNavigate() // useHistory
@@ -18,21 +23,21 @@ const NavBar = observer(() => {
         user.setIsAuth(false)
     }
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar style={{background: '#898989'}}>
         <Container>
-            <NavLink style={{color:'white'}} to={HOME_ROUTE}>НазваниеСайта</NavLink> 
+            <CompanyName>НазваниеСайта</CompanyName> 
             {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button
                             variant={"outline-light"}
                             onClick={() => history(ADMIN_ROUTE)}
+                            style={{marginRight: '30px', marginTop: '0px'}}
                         >
                             Админ панель
                         </Button>
                         <Button
                             variant={"outline-light"}
                             onClick={() => logOut()} // или history(LOGIN_ROUTE)
-                            className="ml-2" // кнопки почему то не отлипают друг от друга :(
                         >
                             Выйти
                         </Button>

@@ -8,31 +8,18 @@ import NavBar from './components/Navbar';
 import {Context} from "./index";
 import {check} from "./http/userAPI";
 import {Spinner} from "react-bootstrap";
+import styled from '@emotion/styled';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//           <p>
-//             First commit
-//           </p>
-//           <div></div>
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+//Пример синтаксиса библиотеки  emotion (css in JS)
+const SpinStyle = styled.div` 
+    height: 100%;
+    padding: 0;
+    margin: 25% 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 const App = observer(() => {
   const {user} = useContext(Context)
   // eslint-disable-next-line no-unused-vars
@@ -47,8 +34,11 @@ const App = observer(() => {
   }, [])
   
   if (loading) {
-    return <Spinner animation={"grow"}/>
-  }
+    return (
+      <SpinStyle>
+        <Spinner animation={"border"} style={{width: '5rem', height: '5rem'}}/>
+      </SpinStyle>
+    )}
   return (
       <BrowserRouter>
           <NavBar />
