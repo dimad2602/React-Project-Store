@@ -1,0 +1,20 @@
+.square {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+  }
+
+.square2 {
+    position: absolute;
+    width: 557px;
+    height: 546.77px;
+    left: 216px;
+    top: 133px;
+  
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 57px;
+  }
+  
