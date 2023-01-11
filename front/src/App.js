@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
+import "./pages/css/main.css";
 import { observer } from 'mobx-react-lite';
 import React, {useContext, useEffect, useState} from 'react';
 import { BrowserRouter } from 'react-router-dom';
@@ -14,7 +15,7 @@ import styled from '@emotion/styled';
 const SpinStyle = styled.div` 
     height: 100%;
     padding: 0;
-    margin: 25% 0 0 0;
+    margin: 25% 0 0 0;  
     display: flex;
     align-items: center;
     justify-content: center;

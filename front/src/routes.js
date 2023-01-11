@@ -5,7 +5,8 @@ import DevicePage from "./pages/DevicePage"
 import Home from "./pages/Home"
 import Shop from "./pages/Shop"
 import Contacts from "./pages/Contacts"
-import { ADMIN_ROUTE, BUILT_ROUTE, DEVICE_ROUTE, HOME_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE, CONTACTS_ROUTE } from "./utils/consts"
+import OurConfigs from "./pages/OurConfigs"
+import { ADMIN_ROUTE, BUILT_ROUTE, DEVICE_ROUTE, HOME_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE, CONTACTS_ROUTE, OURCONFIGS_ROUTE } from "./utils/consts"
 
 export const authRoutes = [
     {
@@ -48,4 +49,9 @@ export const publicRoutes = [
         path: CONTACTS_ROUTE,
         Component: Contacts
     },
+    {
+        path: OURCONFIGS_ROUTE,
+        Component: OurConfigs
+    },
+    
 ]

@@ -8,8 +8,6 @@ const Contacts = ({src, alt}) => {
     const screenHeight = Dimensions.get('screen').height;
     const screenWidth = Dimensions.get('screen').width;
 
-    
-
     return (
         <div
             className="d-flex align-items-center justify-content-center"
@@ -48,13 +46,11 @@ const Contacts = ({src, alt}) => {
                                             BYPCorp@mail.ru
                                     </a>
                                 </li>
-                                
                             </ul>
                         </div>
                     </main>
             </div>
         </div>
-            
     );
 };
 

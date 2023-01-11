@@ -34,7 +34,9 @@ const NavBar = observer(() => {
                 </Link>
                 </li>
                 <li>
-                    Наши сборки
+                    <Link to='/OurConfigs'>
+                        Наши сборки
+                    </Link>
                 </li>
                 <li>
                     Советы
