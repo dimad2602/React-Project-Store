@@ -214,6 +214,9 @@ body {
 .content-list a {
 	color: var(--accent);
 }
+.content-list a:hover{
+	color:blueviolet;
+}
 
 .content-list__item {
 	font-size: 18px;
