@@ -18,7 +18,40 @@ const Contacts = ({src, alt}) => {
             backgroundSize: 'cover', fontSize:64}}
         >
             <div className="square2">
-                <p class="text">Square text</p>
+               
+                    {/* <div>
+                        <h1>
+                            <strong>Помощь по техническим вопросам</strong>
+                        </h1>
+                    </div> */}
+                    <main className="section">
+                        <div className="container">
+                            <ul className="content-list">
+                                <li className="content-list__item">
+                                    <h1 className="title-2">Помощь по техническим вопросам</h1>
+                                    <h2 className="title-3">Telegram / WhatsApp</h2>
+                                    <p>
+                                        <a href="tel:+78005553535">8 (800) 555-35-35</a>
+                                    </p>
+                                </li>
+                                <li className="content-list__item">
+                                    <h2 className="title-2">Email</h2>
+                                    <p>
+                                        <a href="mailto:BYP@mail.ru">
+                                            BYP@mail.ru
+                                        </a>
+                                    </p>
+                                </li>
+                                <li className="content-list__item">
+                                    <h1 className="title-2">Сотрудничество</h1>
+                                    <a href="mailto:BYPCorp@mail.ru">
+                                            BYPCorp@mail.ru
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </main>
             </div>
         </div>
             
