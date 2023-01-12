@@ -49,8 +49,8 @@ html,
 body {
 	min-height: 100vh;
 
-	font-family: 'DM Sans', sans-serif;
-	letter-spacing: -0.5px;
+	/*font-family: 'DM Sans', sans-serif;*/
+	font-family: 'Arial';
 
 	/* Light mode */
 	background-color: var(--page-bg);

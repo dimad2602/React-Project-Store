@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import "./pages/css/main.css";
 import { observer } from 'mobx-react-lite';
 import React, {useContext, useEffect, useState} from 'react';

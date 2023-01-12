@@ -1,70 +1,66 @@
+
 .left {
-  background: rgb(89, 89, 89);
-  display: inline-block;
-  width: 17%;
-  font-size: 18px;
-  padding: 18px 17px;
+  width: 6vw;
   color: #f7f7f9;
+  padding: 20px 0;
+  margin: 0 1vw 0 1vw;
+  position: relative;
+  background: none;
+  border: 0;
+  text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5);
 }
 .left a {
   text-decoration: none;
 }
 .left:hover {
-  font-weight: bolder;
+  cursor: pointer;
 }
 
 .mid {
-  background: rgb(89, 89, 89);
-  display: inline-block;
-  width: 56%;
-  margin: auto;
+  background: none;
+  position: relative;
+  width: 60vw;
+  margin: 0 0 0 0vw;
   color: #f7f7f9;
-}
-.mid li {
-  padding: 10px;
-}
-.mid li:hover {
-  font-weight: bolder;
-}
-.right {
-  background: rgb(89, 89, 89);
-  display: inline-block;
-  margin: auto;
-}
-.right a {
-  text-decoration: none;
-}
-.right li {
-  padding: 10px;
-}
-.right li:hover {
-  font-weight: bolder;
+  padding: 0;
+  font-size: 1rem;
+  border-left: 3px solid #4A4A4A;
+
 }
 
 .navbar {
-  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
 }
 .navbar li {
+  text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5);
   list-style: none;
-  display: inline-block;
-
-  margin: auto;
+  position: relative;
+  padding: 20px 50px;
+  margin: 0;
+  height: 60px;
 }
 
 .navbar li a {
   text-decoration: none;
-  font-size: 18px;
-  /* width: max-content;
-height: max-content; */
 }
-
-/* .navbar li a:hover{
-font-size: 20px;
-} */
-
-.navbar li a:active {
-  /*background-color: deepskyblue;
- border-radius: 5px; */
+.navbar li:hover{
+  cursor: pointer;
+  background: #4A4A4A;
+} 
+.right {
+  background: none;
+  margin: 0 0 0 4vw;
+  font-size: 1.2rem;
+  color: white;
+}
+.right a {
+  text-decoration: none;
+}
+.right li:hover {
+  cursor: pointer;
 }
 
 .Button {
@@ -72,34 +68,23 @@ font-size: 20px;
 }
 
 header {
-  background: rgb(89, 89, 89);
-  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif";
-  /* border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; */
+  background-color: #898989;
+  font-family: "Arial";
+  height: 60px;
+  box-sizing: border-box;
+  display: flex;
+  weight: 100vw;
+  z-index: 10;
+  top: 0;
+  position: sticky;
+  font-weight: 600;
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-}
-
 a {
   vertical-align: middle;
-  font-size: 20px;
-  padding: 10px;
-  color: rgb(255, 246, 228);
-  text-decoration: none;
+  font-size: 1.2rem;
+  color: #f7f7f9;
 }
 a:hover {
-  color: rgb(255, 255, 255);
+  color: #f7f7f9;
   text-decoration: none;
-}
-li {
-  display: inline;
-}
-ul li a img:hover {
-  width: 71px;
-}
-ul li a img {
-  width: 70px;
 }
