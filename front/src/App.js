@@ -18,7 +18,7 @@ const SpinStyle = styled.div`
     align-items: center;
     justify-content: center;
 `
-
+ 
 const App = observer(() => {
   const {user} = useContext(Context)
   // eslint-disable-next-line no-unused-vars
