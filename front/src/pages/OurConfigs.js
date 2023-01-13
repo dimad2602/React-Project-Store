@@ -15,7 +15,7 @@ const OurConfigs = ({src, alt}) => {
       <div className="container">
         <h2 className="title-1">Сборки</h2>
         <ul className="flexer">
-        <Link to='/Gaming'>
+        <Link to='/Config'>
           <li className="content-list__item">
             <img src={config1} alt="Project img" className="config__img" />
             <h3 className="config__title title-config">Игровые</h3>

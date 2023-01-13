@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Contacts from './pages/Contacts';
 import OurConfigs from './pages/OurConfigs';
+import Config from './pages/Config';
 import {
   ADMIN_ROUTE,
   BUILT_ROUTE,
@@ -16,6 +17,7 @@ import {
   SHOP_ROUTE,
   CONTACTS_ROUTE,
   OURCONFIGS_ROUTE,
+  CONFIG,
 } from './utils/consts';
 
 export const authRoutes = [
@@ -62,5 +64,9 @@ export const publicRoutes = [
   {
     path: OURCONFIGS_ROUTE,
     Component: OurConfigs,
+  },
+  {
+    path: CONFIG,
+    Component: Config,
   },
 ];
