@@ -45,6 +45,19 @@ const Config = ({src, alt}) => {
             </p>
           </div>
         </div>
+        <div className="card">
+            <img src={comp} alt="Project img" className="card-img" />
+          <div className="MIcontainer">
+            <h4 className="title-3"><b>Сборка 3</b></h4>
+            <p>
+              <ul>
+                <li>Видеокарта 4</li>
+                <li>Процессор 4</li>
+                <li>Материнка 4</li>
+              </ul>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );
