@@ -32,6 +32,11 @@ ul img {
 
 .sectionConfigs {
   background-image: url("../../assets/OurConfigspng.jpg");
+
+  background-repeat: no-repeat, repeat;
+  background-position: top-left center;
+  
+  height: 93.0vh; 
 }
 
 .content-list {
