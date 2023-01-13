@@ -4,13 +4,10 @@ import comp from '../assets/OurConfigs/gamePC.jpg';
 const Config = ({src, alt}) => {
   return (
     <main>
-      <div className="othercontainer">
-
         <h2 className="title-1">Игровые</h2>
+      <div className="othercontainer">
         <div className="card">
-          <div>
             <img src={comp} alt="Project img" className="card-img" />
-          </div>
           <div className="MIcontainer">
             <h4 className="title-3"><b>Сборка 1</b></h4>
             <p>
@@ -23,9 +20,7 @@ const Config = ({src, alt}) => {
           </div>
         </div>
         <div className="card">
-          <div>
             <img src={comp} alt="Project img" className="card-img" />
-          </div>
           <div className="MIcontainer">
             <h4 className="title-3"><b>Сборка 2</b></h4>
             <p>
@@ -38,9 +33,7 @@ const Config = ({src, alt}) => {
           </div>
         </div>
         <div className="card">
-          <div>
             <img src={comp} alt="Project img" className="card-img" />
-          </div>
           <div className="MIcontainer">
             <h4 className="title-3"><b>Сборка 3</b></h4>
             <p>
