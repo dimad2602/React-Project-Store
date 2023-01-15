@@ -1,56 +1,80 @@
-import React, { useContext } from 'react';
-import { Context } from '../index';
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import { ADMIN_ROUTE, LOGIN_ROUTE} from '../utils/consts';
-import {Button} from "react-bootstrap";
-import {observer} from "mobx-react-lite";
-import {useNavigate} from 'react-router-dom' // useHistory
+import React, {useContext} from 'react';
+import {Context} from '../index';
+import Nav from 'react-bootstrap/Nav';
+import {ADMIN_ROUTE, LOGIN_ROUTE} from '../utils/consts';
+import './modals/Navar.css';
+import {observer} from 'mobx-react-lite';
+import {useNavigate, Link} from 'react-router-dom'; // useHistory
 import styled from '@emotion/styled';
 
 
-const CompanyName = styled.div`
-color: white;
+const NavBar = observer (() => {
+  const {user} = useContext (Context);
+  const history = useNavigate (); // useHistory
 
-`
-const NavBar = observer(() => {
-    const {user} = useContext(Context)
-    const history = useNavigate() // useHistory
+  const logOut = () => {
+    user.setUser ({});
+    user.setIsAuth (false);
+  };
 
-    const logOut = () => {
-        user.setUser({})
-        user.setIsAuth(false)
-    }
-    return (
-        <Navbar style={{background: '#898989'}}>
-        <Container>
-            <CompanyName>НазваниеСайта</CompanyName> 
-            {user.isAuth ?
-                    <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button
-                            variant={"outline-light"}
-                            onClick={() => history(ADMIN_ROUTE)}
-                            style={{marginRight: '30px', marginTop: '0px'}}
-                        >
-                            Админ панель
-                        </Button>
-                        <Button
-                            variant={"outline-light"}
-                            onClick={() => logOut()} // или history(LOGIN_ROUTE)
-                        >
-                            Выйти
-                        </Button>
-                    </Nav>
-                    :
-                    <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button variant={"outline-light"} onClick={() => history(LOGIN_ROUTE)}>Авторизация</Button>  
-                        
-                    </Nav>
-                }
-        </Container>
-      </Navbar>
-    );
+  return (
+    <header className="header">
+      <div className="left">Build Your PC</div>
+      <div className="mid">
+        <ul className="navbar">
+            <Link to="/">
+              <li  tabindex="1">
+                Главная
+              </li>
+            </Link>
+            <Link to="/OurConfigs">
+              <li tabindex="2">
+                Наши сборки
+              </li>
+            </Link>
+            <Link to="">
+              <li tabindex="3">
+                Советы
+              </li>
+            </Link>
+          
+            <Link to="/Shop">
+              <li tabindex="4">
+                Обзоры
+              </li>
+            </Link>
+          
+            <Link to="/Contacts">
+            <li tabindex="5">
+              Контакты
+            </li>
+            </Link>
+        </ul>
+      </div>
+
+      {user.isAuth
+        ? 
+        <div className="right">
+            <ul className="navbar">
+              <li onClick={() => history (ADMIN_ROUTE)}>
+                Админка
+              </li>
+              <li onClick={() => logOut ()}>
+                Выход
+              </li>
+            </ul>
+          </div>
+        : 
+        <div className="right">
+          <ul className="navbar">
+            <li onClick={() => history (LOGIN_ROUTE)}>
+              Авторизация
+            </li>
+          </ul>
+        </div>
+      }
+    </header>
+  );
 });
 
 export default NavBar;
