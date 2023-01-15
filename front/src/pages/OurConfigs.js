@@ -6,7 +6,6 @@ import config3 from '../assets/OurConfigs/offisePC.jpg';
 import config4 from '../assets/OurConfigs/cheapPC.jpg';
 import config5 from '../assets/OurConfigs/averagePC.jpg';
 import config6 from '../assets/OurConfigs/expensivePC.jpg';
-import {Link} from 'react-router-dom';
 
 import './css/OurConfigs.css';
 
@@ -24,25 +23,25 @@ const OurConfigs = ({src, alt}) => {
         </Link>
           <li className="project">
             <img src={config2} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config" title-config>
+            <h3 className="config__title title-config" style={{color: 'black'}}>
               Для дома
             </h3>
           </li>
           <li className="project">
             <img src={config3} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config">Для офиса</h3>
+            <h3 className="config__title title-config" style={{color: 'black'}}>Для офиса</h3>
           </li>
           <li className="project">
             <img src={config4} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config">Бюджетная</h3>
+            <h3 className="config__title title-config" style={{color: 'black'}}>Бюджетная</h3>
           </li>
           <li className="project">
             <img src={config5} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config">Средняя цена</h3>
+            <h3 className="config__title title-config" style={{color: 'black'}}>Средняя цена</h3>
           </li>
           <li className="project">
             <img src={config6} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config">Дорогие</h3>
+            <h3 className="config__title title-config" style={{color: 'black'}}>Дорогие</h3>
           </li>
         </ul>
       </div>

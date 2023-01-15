@@ -5,6 +5,7 @@ import './css/Soviets.css';
 
 const Recommendations = () => {
   return (
+    <div className='qwerty'>
     <div className="h-center-c article" itemProp='articleBody'>
       <h1 className="text-center title">
         Как собрать компьютер самостоятельно из комплектующих
@@ -115,6 +116,7 @@ const Recommendations = () => {
       <p>Для установки видеокарты в материнской плате есть специальный разъем PCI Express. Подобных разъемов на материнской плате может быть 1-2 и даже 7. В случае, если у вас одна видеокарта, устанавливать нужно в самый верхний слот (ближний к процессору).</p>
       <p></p>
       <p></p>
+    </div>
     </div>
   );
 };
