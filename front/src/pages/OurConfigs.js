@@ -6,7 +6,6 @@ import config3 from '../assets/OurConfigs/offisePC.jpg';
 import config4 from '../assets/OurConfigs/cheapPC.jpg';
 import config5 from '../assets/OurConfigs/averagePC.jpg';
 import config6 from '../assets/OurConfigs/expensivePC.jpg';
-import {Link} from 'react-router-dom';
 
 import './css/OurConfigs.css';
 
