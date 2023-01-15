@@ -18,7 +18,7 @@ const OurConfigs = ({src, alt}) => {
         <Link to='/Config'>
           <li className="content-list__item">
             <img src={config1} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config">Игровые</h3>
+            <h3 className="config__title title-config" style={{color: 'black'}}>Игровые</h3>
           </li>
         </Link>
           <li className="project">
