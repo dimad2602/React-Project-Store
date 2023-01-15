@@ -6,6 +6,9 @@ import StrelkaL from '../../src/assets/8aeeb86c8f76807056e0b82db0418b3333380.png
 import FormReview from './ProcVisible';
 import img1 from  '../assets/4SsxWGW2vtI.jpg'
 import Form2Review from './Form2Review';
+import MotherBoardReview from './MotherBoardReview';
+import CPUCooling from './CPUCoolingReview';
+import RAMReview from './RAMReview';
 
 
 const KompItems = [
@@ -139,6 +142,15 @@ function Carousel11() {
           :
           activeSlide == 1 ? 
           <Form2Review/>
+          :
+          activeSlide == 2 ?
+          <MotherBoardReview/> 
+          :
+          activeSlide == 3 ?
+          <CPUCooling/> 
+          :
+          activeSlide == 4 ?
+          <RAMReview/> 
           :
           <img src={img1} alt=""/>
       }
