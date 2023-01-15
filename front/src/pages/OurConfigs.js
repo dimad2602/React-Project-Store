@@ -5,6 +5,7 @@ import config3 from '../assets/OurConfigs/offisePC.jpg';
 import config4 from '../assets/OurConfigs/cheapPC.jpg';
 import config5 from '../assets/OurConfigs/averagePC.jpg';
 import config6 from '../assets/OurConfigs/expensivePC.jpg';
+import {Link} from 'react-router-dom';
 
 import './css/OurConfigs.css';
 
@@ -14,10 +15,12 @@ const OurConfigs = ({src, alt}) => {
       <div className="container">
         <h2 className="title-1">Сборки</h2>
         <ul className="flexer">
+        <Link to='/Config'>
           <li className="content-list__item">
             <img src={config1} alt="Project img" className="config__img" />
             <h3 className="config__title title-config">Игровые</h3>
           </li>
+        </Link>
           <li className="project">
             <img src={config2} alt="Project img" className="config__img" />
             <h3 className="config__title title-config" title-config>
