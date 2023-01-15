@@ -87,7 +87,7 @@ function Carousel11() {
             minWidth: 30,
             alignSelf: "center", 
             marginBottom: '25px',
-            marginLeft: '20px'
+            marginLeft: '15px'
           }
         }}
         dotsNav={{
