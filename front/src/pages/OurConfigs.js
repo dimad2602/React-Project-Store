@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import config1 from '../assets/OurConfigs/gamePC.jpg';
 import config2 from '../assets/OurConfigs/homePC.jpg';
 import config3 from '../assets/OurConfigs/offisePC.jpg';
@@ -18,7 +19,7 @@ const OurConfigs = ({src, alt}) => {
         <Link to='/Config'>
           <li className="content-list__item">
             <img src={config1} alt="Project img" className="config__img" />
-            <h3 className="config__title title-config">Игровые</h3>
+            <h3 className="config__title title-config" style={{color: 'black'}}>Игровые</h3>
           </li>
         </Link>
           <li className="project">
