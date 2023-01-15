@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Contacts from './pages/Contacts';
 import OurConfigs from './pages/OurConfigs';
+import Config from './pages/Config';
 import {
   ADMIN_ROUTE,
   BUILT_ROUTE,
@@ -16,6 +17,7 @@ import {
   SHOP_ROUTE,
   CONTACTS_ROUTE,
   OURCONFIGS_ROUTE,
+  CONFIG,
 } from './utils/consts';
 import Reviews from './pages/Reviews';
 import Recommendations from './pages/Recommendations';
@@ -52,6 +54,10 @@ export const publicRoutes = [
   {
     path: LOGIN_ROUTE,
     Component: Auth,
+  },
+  {
+    path: CONFIG,
+    Component: Config,
   },
   {
     path: REGISTRATION_ROUTE,
