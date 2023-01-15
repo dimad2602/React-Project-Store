@@ -32,13 +32,13 @@ const NavBar = observer (() => {
                 Наши сборки
               </li>
             </Link>
-            <Link to="">
+            <Link to="/recommendations">
               <li tabindex="3">
                 Советы
               </li>
             </Link>
           
-            <Link to="/Shop">
+            <Link to="/reviews">
               <li tabindex="4">
                 Обзоры
               </li>

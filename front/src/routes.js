@@ -17,6 +17,8 @@ import {
   CONTACTS_ROUTE,
   OURCONFIGS_ROUTE,
 } from './utils/consts';
+import Reviews from './pages/Reviews';
+import Recommendations from './pages/Recommendations';
 
 export const authRoutes = [
   {
@@ -38,6 +40,14 @@ export const publicRoutes = [
   {
     path: SHOP_ROUTE,
     Component: Shop,
+  },
+  {
+    path: '/reviews',
+    Component: Reviews,
+  },
+  {
+    path: '/recommendations',
+    Component: Recommendations,
   },
   {
     path: LOGIN_ROUTE,
