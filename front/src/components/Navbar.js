@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import {Context} from '../index';
-import Nav from 'react-bootstrap/Nav';
 import {ADMIN_ROUTE, LOGIN_ROUTE} from '../utils/consts';
 import './modals/Navar.css';
 import {observer} from 'mobx-react-lite';
@@ -18,19 +17,15 @@ const NavBar = observer (() => {
   };
 
   return (
-    <header className="header">
-      <div className="left">Build Your PC</div>
-      <div className="mid">
-        <ul className="navbar">
+    <header className="hat">
+      <div className='c-name'>Build Your PC</div>
+      <div >
+        <ul className='hatcontainer navbar'>
             <Link to="/">
-              <li  tabindex="1">
-                Главная
-              </li>
+              <li>Главная</li>
             </Link>
             <Link to="/OurConfigs">
-              <li tabindex="2">
-                Наши сборки
-              </li>
+              <li >Наши сборки</li>
             </Link>
             <Link to="/recommendations">
               <li tabindex="3">
@@ -45,17 +40,15 @@ const NavBar = observer (() => {
             </Link>
           
             <Link to="/Contacts">
-            <li tabindex="5">
-              Контакты
-            </li>
+            <li >Контакты</li>
             </Link>
         </ul>
       </div>
 
       {user.isAuth
         ? 
-        <div className="right">
-            <ul className="navbar">
+        <div>
+            <ul className="navbar right">
               <li onClick={() => history (ADMIN_ROUTE)}>
                 Админка
               </li>

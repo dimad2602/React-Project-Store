@@ -28,40 +28,6 @@
 
 }
 
-.navbar {
-  position: relative;
-  margin: 0;
-  padding: 0;
-
-}
-.navbar li {
-  text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5);
-  list-style: none;
-  position: relative;
-  padding: 20px 50px;
-  margin: 0;
-  height: 60px;
-}
-
-.navbar li a {
-  text-decoration: none;
-}
-.navbar li:hover{
-  cursor: pointer;
-  background: #4A4A4A;
-} 
-.right {
-  background: none;
-  margin: 0 0 0 4vw;
-  font-size: 1.2rem;
-  color: white;
-}
-.right a {
-  text-decoration: none;
-}
-.right li:hover {
-  cursor: pointer;
-}
 
 .Button {
   margin: "30px";
@@ -70,14 +36,14 @@
 header {
   background-color: #898989;
   font-family: "Arial";
-  height: 60px;
+  height: fit-content;
   box-sizing: border-box;
   display: flex;
-  weight: 100vw;
+  /* weight: 100vw; */
   z-index: 10;
   top: 0;
   position: sticky;
-  font-weight: 600;
+  font-weight: 540;
 }
 a {
   vertical-align: middle;
@@ -88,3 +54,54 @@ a:hover {
   color: #f7f7f9;
   text-decoration: none;
 }
+.c-name{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto ;
+}
+  .navbar {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+  
+  }
+  .navbar li {
+    /* text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5); */
+    list-style: none;
+    position: relative;
+    padding: 1em;
+    margin: 0;
+    height: fit-content;
+    text-align: center;
+    font-size: medium;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+  }
+  .navbar li:hover{
+    cursor: pointer;
+    background: #4A4A4A;
+  } 
+  .right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: none;
+    /* margin: 0 0 0 4vw; */
+    /* font-size: 1.2rem; */
+    color: white;
+  }
+  .right a {
+    text-decoration: none;
+  }
+  .right li:hover {
+    cursor: pointer;
+  }
+  .hat{
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+  }
+  .hatcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }

@@ -79,4 +79,8 @@ export const publicRoutes = [
     path: OURCONFIGS_ROUTE,
     Component: OurConfigs,
   },
+  {
+    path: CONFIG,
+    Component: Config,
+  },
 ];
