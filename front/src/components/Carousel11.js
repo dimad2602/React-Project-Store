@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import Carousel from "react-simply-carousel";
 import StrelkaP from '../../src/assets/8aeeb86c8f76807056e0b82db0418b80.png';
 import StrelkaL from '../../src/assets/8aeeb86c8f76807056e0b82db0418b3333380.png';
+import FormReview from './ProcVisible';
+import img1 from  '../assets/4SsxWGW2vtI.jpg'
+import Form2Review from './Form2Review';
 
 
 const KompItems = [
@@ -11,12 +14,12 @@ const KompItems = [
       route: ''
   },
   {
-      name: "Материнская плата",
-      route: '',
+    name: "Видеокарта",
+    route: ''
   },
   {
-      name: "Видеокарта",
-      route: ''
+      name: "Материнская плата",
+      route: '',
   },
   {
       name: "Охлаждение процессора",
@@ -70,6 +73,7 @@ function Carousel11() {
             minWidth: 30,
             alignSelf: "center",
             marginBottom: '25px',
+            marginRight: '20px'
           }
         }}
         backwardBtnProps={{
@@ -79,7 +83,8 @@ function Carousel11() {
             height: 30,
             minWidth: 30,
             alignSelf: "center", 
-            marginBottom: '25px'
+            marginBottom: '25px',
+            marginLeft: '20px'
           }
         }}
         dotsNav={{
@@ -125,6 +130,20 @@ function Carousel11() {
           </div>
         ))}
       </Carousel>
+
+      {
+        activeSlide == 0 ? 
+        <FormReview>
+
+        </FormReview>
+          :
+          activeSlide == 1 ? 
+          <Form2Review/>
+          :
+          <img src={img1} alt=""/>
+      }
+
+
     </div>
   );
 }
