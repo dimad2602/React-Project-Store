@@ -35,29 +35,29 @@ const Recommendations = () => {
       Устанавливаем БП и прокладываем провода
       </h2>
       <p>В современных корпусах чаще всего отсек для блока питания располагается снизу. </p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_ed8aac7431bac4a3a658a54431a19a5b0d3e80f749133f28f333bc8d87003093.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_ed8aac7431bac4a3a658a54431a19a5b0d3e80f749133f28f333bc8d87003093.jpg/' alt=''></img>
       <p>В таком случае устанавливаем блок питания вентилятором вниз, не забываем прикрутить. Если блок питания модульный, лучше заранее подключить все необходимые провода перед его установкой. Именно необходимые, а не все, что есть в комплекте.</p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b4afb2b829f5ec59974a07279a88704fbcd3c49a06c4b8957f7f30602421ad57.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b4afb2b829f5ec59974a07279a88704fbcd3c49a06c4b8957f7f30602421ad57.jpg/' alt=''></img>
       <p>Обычно это кабель питания материнской платы, процессора, один кабель для питания жестких дисков и один кабель питания видеокарты (зависит от видеокарты и ее энергопотребления, об этом будет далее чуть подробнее).</p>
       <p>До установки материнской платы в корпус, желательно определить места вывода питающих проводов из-за поддона и продеть в соответствующее отверстие.</p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_42f2ab4d3b766ce94e6fa5c80ae4c1ef0452b54300294779b8423aa056170404.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_42f2ab4d3b766ce94e6fa5c80ae4c1ef0452b54300294779b8423aa056170404.jpg/' alt=''></img>
       <p><b>Лучший способ сделать это, так сказать, примерить плату не прикручивая.</b></p>
       <h2 className='subtitle'>
       Устанавливаем процессор
       </h2>
       <p>Начать сборку компьютера лучше всего с установки процессора в сокет материнской платы. Работа несложная, но требует внимания и аккуратности. В зависимости от производителя — AMD или INTEL — будет меняться расположение контактов на процессоре и материнской плате. У процессоров AMD выступающие контакты расположены на подложке процессора, в то время как у Intel контакты находятся непосредственно в сокете материнской платы.</p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_50d188c3015c823146d585209061f7b213906ed0cfd3ac0ee07bfaae5d194fdb.jpg/' alt=''></img>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b148f0c4df9fb95d5cb1858147f6851f08a056b2ca68a5170b5b8e5c84805722.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_50d188c3015c823146d585209061f7b213906ed0cfd3ac0ee07bfaae5d194fdb.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b148f0c4df9fb95d5cb1858147f6851f08a056b2ca68a5170b5b8e5c84805722.jpg/' alt=''></img>
       <h2 className='subtitle'>
       Установка SSD M.2 накопителя
       </h2>
       <p>Следующий этап — это установка SSD M.2 накопителя, если таковой имеется. Устанавливается он в специальный разъем на материнской плате. Для установки используется специальная стойка с винтом, иногда она уже вкручена в материнскую плату иногда лежит в пакетике с комплектующими от материнской платы. </p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_d42146f67fbf36348ac0dccca8cefffbc1e37c54e781e9677b85054b534d355a.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_d42146f67fbf36348ac0dccca8cefffbc1e37c54e781e9677b85054b534d355a.jpg/' alt=''></img>
       <p>Бывают случи, когда винт настолько туго закручен, что выкручивается вместе со стойкой — тут без плоскогубцев уже не обойтись. В материнской плате для установки стойки есть несколько мест, а более дорогие модели материнских плат оснащены радиатором для M.2-диска. Установка стойки зависит от типоразмера вашего диска M.2. </p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b1d188ff54827b1de701deb23952ace2a0213a3bd29e97ace0abd0a7e535beae.png/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b1d188ff54827b1de701deb23952ace2a0213a3bd29e97ace0abd0a7e535beae.png/' alt=''></img>
       <p>Откручиваем винт, вставляем накопитель в разъем и закручиваем винт обратно. Главное не переусердствовать, накопитель просто должен держаться и не болтаться.</p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_dc8d78f9f73175facd8d96800a91ceacdc7f1ab4f3f50cb5b624657a7dbe2c94.png/' alt=''></img>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_ae0a15a2daf728bb213453595c30c5163f91db50d6361728938bfafea14e0f0b.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_dc8d78f9f73175facd8d96800a91ceacdc7f1ab4f3f50cb5b624657a7dbe2c94.png/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_ae0a15a2daf728bb213453595c30c5163f91db50d6361728938bfafea14e0f0b.jpg/' alt=''></img>
       <h2 className='subtitle'>
       Установка оперативной памяти 
       </h2>
@@ -101,15 +101,15 @@ const Recommendations = () => {
       Установка и подключение накопителей
       </h2>
       <p>Для установки жестких дисков в корпусе есть специальные отсеки с корзинами. Жесткий диск винтами прикручивается к корзине, а потом устанавливается в отсек. Затем подключаем питание по интерфейсу Sata Power и гибкий провод SATA. При подключении нужно быть внимательным: у колодок есть небольшой выступ. Такой же есть и у разъемов жесткого диска.</p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_3578f174ab6e07478e3aeec69618ba6f361277bbae56bc67da3369ec30faba65.jpg/' alt=''></img>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_1f64165b0c106d63e404d18c65eea25e64794b68adcf6ebc65510aba9e7d00f3.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_3578f174ab6e07478e3aeec69618ba6f361277bbae56bc67da3369ec30faba65.jpg/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_1f64165b0c106d63e404d18c65eea25e64794b68adcf6ebc65510aba9e7d00f3.jpg/' alt=''></img>
       <p>Затем подключаем шнур SATA к материнской плате.</p>
       <h2 className='subtitle'>
       Подключение RGB-ARGB подсветки
       </h2>
       <p>Мода и маркетинг диктуют свою условия ­­­— эффективная подсветка компьютера активно входит в обиход пользователей. Сложность подключения заключается в том, что разный тип подсветки RGB и ARGB работает при разном напряжении, неправильное подключение может вывести подсветку из строя и повредить разъемы на материнской плате. Разобраться, что куда подключить поможет снова инструкция от материнской платы и капелька внимательности.</p>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b69814d963ee0f9e0b034d2a1a0b4a8acaeeda382e2326c2b6c7bd23a9d3e38d.png/' alt=''></img>
-      <img src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_2dad2ff10257caeee7342ad95bb088312145a24372ef193874024b9779a37db0.png/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_b69814d963ee0f9e0b034d2a1a0b4a8acaeeda382e2326c2b6c7bd23a9d3e38d.png/' alt=''></img>
+      <img className='img123' src='https://club.dns-shop.ru/api/v1/image/getOriginal/q93_2dad2ff10257caeee7342ad95bb088312145a24372ef193874024b9779a37db0.png/' alt=''></img>
       <h2 className='subtitle'>
       Установка и подключение видеокарты
       </h2>
