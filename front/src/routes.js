@@ -56,6 +56,10 @@ export const publicRoutes = [
     Component: Auth,
   },
   {
+    path: CONFIG,
+    Component: Config,
+  },
+  {
     path: REGISTRATION_ROUTE,
     Component: Auth,
   },
