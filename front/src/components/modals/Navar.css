@@ -1,4 +1,3 @@
-
 .left {
   width: 6vw;
   color: #f7f7f9;
@@ -8,15 +7,15 @@
   background: none;
   border: 0;
   text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5);
-}
-.left a {
+  }
+  .left a {
   text-decoration: none;
-}
-.left:hover {
+  }
+  .left:hover {
   cursor: pointer;
-}
-
-.mid {
+  }
+  
+  .mid {
   background: none;
   position: relative;
   width: 60vw;
@@ -25,83 +24,66 @@
   padding: 0;
   font-size: 1rem;
   border-left: 3px solid #4A4A4A;
-
-}
-
-
-.Button {
-  margin: "30px";
-}
-
-header {
-  background-color: #898989;
-  font-family: "Arial";
-  height: fit-content;
-  box-sizing: border-box;
-  display: flex;
-  /* weight: 100vw; */
-  z-index: 10;
-  top: 0;
-  position: sticky;
-  font-weight: 540;
-}
-a {
-  vertical-align: middle;
-  font-size: 1.2rem;
-  color: #f7f7f9;
-}
-a:hover {
-  color: #f7f7f9;
-  text-decoration: none;
-}
-.c-name{
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto ;
-}
+  
+  }
+  
   .navbar {
-    /* position: relative; */
-    margin: 0;
-    padding: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
   
   }
   .navbar li {
-    /* text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5); */
-    list-style: none;
-    position: relative;
-    padding: 1em;
-    margin: 0;
-    height: fit-content;
-    text-align: center;
-    font-size: medium;
+  text-shadow: 0.2em 0.2em 3px rgba(15, 13, 13, 0.5);
+  list-style: none;
+  position: relative;
+  padding: 20px 50px;
+  margin: 0;
+  height: 60px;
   }
   
   .navbar li a {
-    text-decoration: none;
+  text-decoration: none;
   }
   .navbar li:hover{
-    cursor: pointer;
-    background: #4A4A4A;
-  } 
-  .right{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: none;
-    /* margin: 0 0 0 4vw; */
-    /* font-size: 1.2rem; */
-    color: white;
+  cursor: pointer;
+  background: #4A4A4A;
+  }
+  .right {
+  background: none;
+  margin: 0 0 0 4vw;
+  font-size: 1.2rem;
+  color: white;
   }
   .right a {
-    text-decoration: none;
+  text-decoration: none;
   }
   .right li:hover {
-    cursor: pointer;
+  cursor: pointer;
   }
-  .hat{
-    display: grid;
-    grid-template-columns: 1fr 6fr 2fr;
+  
+  .Button {
+  margin: "30px";
   }
-  .hatcontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  header {
+  background-color: #898989;
+  font-family: "Arial";
+  height: 60px;
+  box-sizing: border-box;
+  display: flex;
+  weight: 100vw;
+  z-index: 10;
+  top: 0;
+  position: sticky;
+  font-weight: 600;
+  }
+  a {
+  vertical-align: middle;
+  font-size: 1.2rem;
+  color: #f7f7f9;
+  }
+  a:hover {
+  color: #f7f7f9;
+  text-decoration: none;
   }
