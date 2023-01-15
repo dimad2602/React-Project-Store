@@ -38,7 +38,6 @@ const Square = styled.div`
     height: 80%;   
     left: 20%;
     top: 15vh;
-
     background: #2D2D2D;
     ${'' /* mix-blend-mode: multiply; */}
     background: rgba( 0, 0, 0, 0.75);
@@ -78,28 +77,27 @@ const Text = styled.div`
     text-align: center;
     vertical-align: middle;
     line-height: 20px;
-    font-size: 22px;
 
     ${'' /* font-family: 'Inter'; */}
     font-style: normal;
-    font-size: 64px;
+    font-size: 70px;
 `
 
 const Text2 = styled.div`
-    color: #fff;
+    color: #deefff;
     border: none;
 
     ${'' /* font-family: 'Inter'; */}
     font-style: normal;
     
-    margin-top: 70px;
+    margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
     align-items: center;
     text-align: center;
     vertical-align: middle;
     line-height: 39px;
-    font-size: 32px;
+    font-size: 40px;
 
 `
 
@@ -125,12 +123,16 @@ const Home = () => {
             <BackgroundPNG2>
                 <Square2>
                         <Text> 
-                            Почему мы?
+                            Наши преимущества
                         </Text>
                         <Text2>
-                            Мы предлагаем удобный механизм, который должен находить наилучшую комбинацию из доступных в продаже 
-                            комплектующих ПК исходя из всесторонней оценки их 
-                            взаимной совместимости и финансовых ресурсов пользователя и его потребностей
+                            Мы предлагаем удобный механизм, который должен находить наилучшую 
+                            комбинацию из доступных в продаже комплектующих ПК
+                        </Text2>
+                        <Text2>
+                            Исходя из всесторонней оценки 
+                            взаимной совместимости комплектующих, финансовых ресурсов пользователя
+                            и его потребностей преложим наилучший вариант сборки
                         </Text2>
                 </Square2> 
             </BackgroundPNG2>
@@ -140,7 +142,7 @@ const Home = () => {
                             Обратитесь к нам если
                         </Text>
                         <Text2>
-                            Вы хотите приобрести максимально производительный компьютер за свои деньги
+                            Вы хотите приобрести максимально производительный компьютер в интересующем вас бюджете
                         </Text2>
                         <Text2>
                             Вы планируете приобрести большое количество компьютеров для офиса или компании
