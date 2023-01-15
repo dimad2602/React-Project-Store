@@ -27,12 +27,18 @@ const NavBar = observer (() => {
             <Link to="/OurConfigs">
               <li >Наши сборки</li>
             </Link>
-            <Link to="">
-              <li >Советы</li>
-            </Link>          
-            <Link to="/Shop">
-              <li >Обзоры</li>
-            </Link>          
+            <Link to="/recommendations">
+              <li tabindex="3">
+                Советы
+              </li>
+            </Link>
+          
+            <Link to="/reviews">
+              <li tabindex="4">
+                Обзоры
+              </li>
+            </Link>
+          
             <Link to="/Contacts">
             <li >Контакты</li>
             </Link>
